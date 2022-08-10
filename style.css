@@ -37,6 +37,16 @@ a {
   align-items: center;
   justify-content: space-between;
 }
+.equal_col {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 1rem;
+}
+.number_equal_col {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr));
+  gap: 1rem;
+}
 /* ? navbar section Start */
 
 .nav_container {
@@ -201,10 +211,110 @@ a {
   padding-inline: clamp(2.5rem, 10vw, 7rem);
   line-height: 1.4;
 }
-.about_image {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
-  gap: 1rem;
+
+.img_container {
+  position: relative;
+}
+.icon_show_wrapper {
+  position: absolute;
+  content: "";
+  /* background-color: rgba(86, 233, 233, 0.367); */
+  background: linear-gradient(
+    to top,
+    rgba(250, 168, 182, 0.662),
+    rgba(247, 168, 21, 0.638)
+  );
+  /* opacity: 0.3; */
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  /* transform: translate(-50%, -50%); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  opacity: 0;
+  transition: opacity 300ms ease-in;
+  /* z-index: -1; */
+}
+.icon_show_wrapper h4 {
+  color: #e1e1e1;
+  font-variant: small-caps;
+  /* text-transform: uppercase; */
+  font-weight: bold;
+}
+.icon_show {
+  width: 3rem;
+  background-color: #72b8b8;
+  aspect-ratio: 1 /1;
+  font-size: 1.5rem;
+  color: #f0ebeb;
+  border-radius: 50%;
+  box-shadow: 0px 5px 10px hsl(0 0% 0% / 0.3);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img_container img {
+  width: 100%;
+}
+.img_container-1 {
+  margin-bottom: 1.5rem;
+}
+.img_container:hover .icon_show_wrapper {
+  opacity: 1;
 }
 
 /* ! About Section End */
+
+/* ? Number Section Start */
+#number {
+  /* margin-block: 5rem; */
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 255, 0.797),
+    rgba(93, 14, 231, 0.938)
+  );
+}
+.number_container {
+  padding-block: 3rem;
+}
+.number {
+  text-align: center;
+  color: #e1e1e1;
+  text-transform: uppercase;
+}
+.number h1 {
+  font-size: clamp(1.5rem, 5vw, 3rem);
+  font-weight: bold;
+}
+.number p {
+  font-size: 0.5rem;
+  margin-top: 0.25rem;
+}
+/* ! Number Section End */
+
+/* ? Service Section Start */
+#service {
+  margin-block: 7rem;
+}
+.service_container {
+}
+.single_service {
+  display: flex;
+  width: max-content;
+  gap: 1rem;
+  max-width: 33%;
+}
+.single_service h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.single_service > *.fas {
+  font-size: 2rem;
+  color: #08b1cb;
+}
+/* ! Service Section End */
