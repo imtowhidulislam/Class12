@@ -160,3 +160,51 @@ a {
   background-color: #4f47d3;
 }
 /* ! Banner Section End */
+
+/* ? About Section Start */
+#about {
+  margin-block: 5rem;
+}
+.about_head {
+  text-align: center;
+}
+.about_head * {
+  text-transform: uppercase;
+}
+.about_head h3 {
+  margin-block-end: 2rem;
+  margin-block-start: 1rem;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  position: relative;
+  padding-bottom: 2rem;
+}
+.about_head h3::after {
+  position: absolute;
+  content: "";
+  height: 0.2rem;
+  width: 4rem;
+  background-color: #cdab25;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.about_head h2 {
+  /* font-family: "Yeseva One", cursive; */
+  font-family: "Alatsi", sans-serif;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+.about_head p {
+  font-size: clamp(0.5rem, 3vw, 0.8rem);
+  margin-bottom: 4rem;
+  padding-inline: clamp(2.5rem, 10vw, 7rem);
+  line-height: 1.4;
+}
+.about_image {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 1rem;
+}
+
+/* ! About Section End */
