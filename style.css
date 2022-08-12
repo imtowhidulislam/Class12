@@ -222,7 +222,7 @@ a {
 }
 .icon_show_wrapper {
   position: absolute;
-  content: ""; 
+  content: "";
   /* background-color: rgba(86, 233, 233, 0.367); */
   background: linear-gradient(
     to top,
@@ -419,17 +419,16 @@ i {
   transition: opacity 300ms ease-in;
   /* z-index: -1; */
 }
-.icon_show_wrapper h2{
-  font-size: .8rem;
+.icon_show_wrapper h2 {
+  font-size: 0.8rem;
   font-weight: bold;
-  
 }
 .icon_show_wrapper {
   color: #f0ebeb;
   text-transform: uppercase;
 }
-.icon_show_wrapper p{
-  font-size: .7rem;
+.icon_show_wrapper p {
+  font-size: 0.7rem;
 }
 
 .icon_show {
@@ -453,4 +452,94 @@ i {
 }
 .img_container:hover .icon_show_wrapper {
   opacity: 1;
+}
 /* ! Image Gellery Section End */
+
+/* ? Footer Section Start */
+#footer {
+  /* margin-block: 8rem; */
+  background-color: #5c5c5c;
+  padding-block: 3rem;
+  color: #deedf0;
+}
+.footer_logo {
+  width: 4rem;
+}
+.footer_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  /* place-items: center; */
+  gap: 1rem;
+}
+/* ! Redandent Style */
+/* .footer_content .fas1 {
+  font-size: 1.2rem;
+  width: 2rem;
+  aspect-ratio: 1 /1;
+  background-color: #52b9eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+} */
+.footer_img {
+  max-width: 7rem;
+}
+.footer_content .footer_links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.contact p {
+  color: #deedf0;
+  padding-block: 0.25rem;
+  word-wrap: break-word;
+}
+.para {
+  margin-bottom: 1.5rem;
+}
+.footer_content > h2,
+.footer_logo {
+  color: #f0ebeb;
+  margin-bottom: 2rem;
+  text-transform: capitalize;
+}
+.footer_img_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr));
+  gap: 1rem;
+}
+.footer_img {
+  /* max-width: 7rem; */
+}
+.footer_links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  gap: 1rem;
+}
+.footer_links a {
+  text-transform: capitalize;
+  color: #deedf0;
+  transition: color 300ms ease-in;
+}
+.footer_links a:hover {
+  color: #1cb2f3;
+}
+/* ! Footer Section End */
+
+/* ? End Section Start */
+#end {
+  padding-block: 0.8rem;
+  background-color: #696666;
+}
+.copyright {
+  text-align: center;
+}
+.copyright a {
+  text-transform: uppercase;
+  color: #09adf4;
+  font-weight: bold;
+  cursor: pointer;
+}
+/* ! End Section End */
