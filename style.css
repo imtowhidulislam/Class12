@@ -99,6 +99,22 @@ a {
 .list + .list {
   margin-left: 1rem;
 }
+.nav_lists {
+  display: none;
+}
+.bars {
+  display: block;
+}
+@media (min-width: 35rem) {
+  .bars {
+    display: none;
+  }
+  .nav_lists {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 /* ! navbar section End */
 
 /* ? Banner Section Start */
@@ -367,6 +383,31 @@ i {
   width: 4rem;
   background-color: #cdab25;
 }
+.first_letter {
+  color: #2fa2a8;
+  font-size: clamp(2rem, 5vw, 4.5rem);
+  font-weight: bold;
+}
+@media (max-width: 35rem) {
+  .comment_container {
+    flex-direction: column;
+    padding-inline: 2rem;
+  }
+  .auth {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .auth p {
+    font-size: 3rem;
+    order: 0;
+    text-align: center;
+  }
+  .auth div {
+    width: calc(100% - 6rem);
+    order: 1;
+  }
+}
 /* ! Comment Section End */
 
 /* ? Team Section Start */
@@ -467,7 +508,7 @@ i {
 }
 .footer_container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
   /* place-items: center; */
   gap: 1rem;
 }
@@ -484,6 +525,11 @@ i {
 } */
 .footer_img {
   max-width: 7rem;
+}
+.footer_img img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
 }
 .footer_content .footer_links {
   display: flex;
@@ -507,7 +553,7 @@ i {
 }
 .footer_img_container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
   gap: 1rem;
 }
 .footer_img {

@@ -21,7 +21,7 @@
       rel="stylesheet"
     />
     <!-- !! Script Link -->
-    <script src="./app.js"></script>
+    <script defer src="./app.js"></script>
 
     <!-- ? Fontawesome Link  -->
   </head>
@@ -31,12 +31,15 @@
       <div class="nav_container">
         <nav class="navbar container align_content">
           <div class="logo"><img src="./assets/logo.png" alt="" /></div>
-          <ul class="align_content">
-            <li class="list"><a href="#">home</a></li>
+          <ul class="nav_lists">
+            <li class="list"><a href="#about">home</a></li>
             <li class="list"><a href="#">about</a></li>
             <li class="list"><a href="#">projects</a></li>
             <li class="list"><a href="#">blogs</a></li>
           </ul>
+          <div class="bars">
+            <i class="fas fa-bars"></i>
+          </div>
         </nav>
       </div>
       <section id="banner">
@@ -51,7 +54,7 @@
     <!-- ! Header Section End -->
 
     <!-- ? About Section Start -->
-    <section id="about">
+    <section class="section--1" id="about">
       <div class="container">
         <div class="about_head">
           <h2>what we do</h2>
@@ -93,7 +96,7 @@
     <!-- ! About Section End -->
 
     <!-- ? Number Section Start -->
-    <section id="number">
+    <section class="section--2" id="number">
       <div class="container">
         <div class="number_equal_col number_container">
           <div class="number">
@@ -122,7 +125,7 @@
     <!-- ! Number Section End -->
 
     <!-- ? Services Section Start -->
-    <section id="service">
+    <section class="section--3" id="service">
       <div class="container">
         <div class="about_head">
           <h2>we work with</h2>
@@ -195,15 +198,15 @@
     <!-- ! Services Section End -->
 
     <!-- ? Comments Section Start -->
-    <section id="comment">
+    <section class="section--4" id="comment">
       <div class="container">
         <div class="comment_container">
           <div class="com_icon"><i class="fas fa-message"></i></div>
           <div class="com_text">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. In
-              repellat quaerat veniam provident consectetur hic ducimus
-              possimus. Nulla, iure illum?
+              <span class="first_letter">L</span>orem ipsum dolor sit amet,
+              consectetur adipisicing elit. In repellat quaerat veniam provident
+              consectetur hic ducimus possimus. Nulla, iure illum?
             </p>
             <div class="auth">
               <div></div>
@@ -216,7 +219,7 @@
     <!-- ! Comments Section End -->
 
     <!-- ? Team Members Section Start -->
-    <section id="team">
+    <section class="section--5" id="team">
       <div class="container">
         <div class="about_head team_container">
           <h2>who we are</h2>
@@ -271,7 +274,7 @@
     <!-- ! Team Members Section End -->
 
     <!-- ? Image Gelleru Section Start -->
-    <section id="photo-gellery">
+    <section class="section--6" id="photo-gellery">
       <div class="container">
         <div class="about_head team_container">
           <h2>what we do</h2>
@@ -367,7 +370,7 @@
     </section>
     <!-- ! Image Gelleru Section End -->
     <!-- ? Footer Section Start -->
-    <footer id="footer">
+    <footer class="section--7" id="footer">
       <div class="container">
         <div class="footer_container">
           <div class="footer_content">
