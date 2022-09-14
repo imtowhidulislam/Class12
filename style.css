@@ -331,16 +331,19 @@ a {
 }
 .img_container {
 }
-.img_container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.first_col {
+  border: 2px solid red;
 }
 .gel_img_first,
 .gel_img_second:has(img) {
   /* margin-bottom: 1.5rem; */
   height: 100%;
   border: 2px solid blue;
+}
+.img_container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .img_container:hover .icon_show_wrapper {
   opacity: 1;
