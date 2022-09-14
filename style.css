@@ -333,6 +333,7 @@ a {
 }
 .first_col {
   border: 2px solid red;
+  height: 100%;
 }
 .gel_img_first,
 .gel_img_second:has(img) {
