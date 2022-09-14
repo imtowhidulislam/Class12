@@ -337,7 +337,9 @@ a {
   overflow: hidden;
 }
 .gel_img_first,
-.gel_img_second,
+.gel_img_second:has(img) {
+  height: 50%;
+}
 .gel_img_three:has(img) {
   /* margin-bottom: 1.5rem; */
   height: 100%;
