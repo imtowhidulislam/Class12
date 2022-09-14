@@ -579,8 +579,8 @@ i {
   border-radius: 50%;
 } */
 .footer_links:has(.footer_img) {
-  border: 2px solid red;
   overflow: hidden;
+  object-fit: cover;
 }
 .footer_img {
   max-width: 7rem;
