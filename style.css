@@ -578,7 +578,7 @@ i {
   justify-content: center;
   border-radius: 50%;
 } */
-.footer_links:has(img) {
+.footer_links:has(.footer_img) {
   border: 2px solid red;
 }
 .footer_img {
