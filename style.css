@@ -336,8 +336,8 @@ a {
   height: 100%;
   object-fit: cover;
 }
-.img_container-1,
-.img_container-2 img {
+.gel_img_first,
+.gel_img_second:has(img) {
   /* margin-bottom: 1.5rem; */
   height: 100%;
   border: 2px solid blue;
