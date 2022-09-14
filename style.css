@@ -338,7 +338,8 @@ a {
   overflow: hidden;
 }
 .gel_img_first,
-.gel_img_second:has(img) {
+.gel_img_second,
+.gel_img_third:has(img) {
   /* margin-bottom: 1.5rem; */
   height: 100%;
   border: 2px solid blue;
