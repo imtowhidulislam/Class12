@@ -329,6 +329,9 @@ a {
   align-items: center;
   justify-content: center;
 }
+.img_container {
+  border: 2px solid blue;
+}
 .img_container img {
   width: 100%;
   border: 2px solid yellow;
