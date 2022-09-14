@@ -337,7 +337,7 @@ a {
   object-fit: cover;
 }
 .img_container-1,
-.img_container-2 {
+.img_container-2 img {
   /* margin-bottom: 1.5rem; */
   height: 100%;
 }
