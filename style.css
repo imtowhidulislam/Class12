@@ -331,6 +331,7 @@ a {
 }
 .img_container img {
   width: 100%;
+  border: 2px solid yellow;
 }
 .img_container-1 {
   /* margin-bottom: 1.5rem; */
