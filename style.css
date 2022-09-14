@@ -331,7 +331,8 @@ a {
 }
 .img_container {
 }
-.first_col {
+.first_col,
+.third {
   border: 2px solid red;
   height: 100%;
   overflow: hidden;
