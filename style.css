@@ -580,6 +580,7 @@ i {
 } */
 .footer_links:has(.footer_img) {
   border: 2px solid red;
+  overflow: hidden;
 }
 .footer_img {
   max-width: 7rem;
